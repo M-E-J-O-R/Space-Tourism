@@ -1,0 +1,42 @@
+.nav_container {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  width: 100vw;
+  color: white;
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+hr {
+  display: block;
+  width: 473px;
+  position: relative;
+  left: 2rem;
+  z-index: 2;
+  border: 0.001px solid rgba(151, 151, 151, 0.4);
+}
+
+.nav__children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 830px;
+  background-color: rgba(151, 151, 151, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem 1rem;
+  transition: all 0.2s linear;
+}
+a:hover {
+  border-bottom: 2px solid white;
+}
+a span {
+  padding: 0 0.25rem;
+}/*# sourceMappingURL=nav-bar.css.map */
