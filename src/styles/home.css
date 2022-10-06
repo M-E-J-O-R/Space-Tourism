@@ -1,1 +1,61 @@
-/*# sourceMappingURL=home.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.Home {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  padding-left: 3.5rem;
+  background-color: black;
+}
+
+.space {
+  color: #d0d6f9;
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.space__one {
+  width: 450px;
+}
+.space__one .space__one_ques {
+  font-size: 28px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.space__one .space__one_head {
+  font-size: 150px;
+  font-family: "Bellefair", serif;
+  margin: 1.5rem 0;
+}
+.space__one .space__one_talks {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+.space__two {
+  width: 275px;
+  height: 275px;
+  display: flex;
+  font-size: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.521);
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .Home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+}
+@media screen and (max-width: 500px) {
+  .Home {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+}/*# sourceMappingURL=home.css.map */
