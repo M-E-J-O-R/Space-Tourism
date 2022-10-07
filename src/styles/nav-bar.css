@@ -8,8 +8,11 @@
   padding-top: 2rem;
   justify-content: space-between;
 }
-
-hr {
+.nav_container .logo {
+  width: 40px;
+  height: 40px;
+}
+.nav_container hr {
   display: block;
   width: 473px;
   position: relative;
