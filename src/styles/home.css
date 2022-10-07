@@ -27,7 +27,7 @@
 .space__one .space__one_head {
   font-size: 150px;
   font-family: "Bellefair", serif;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 .space__one .space__one_talks {
   font-family: "Barlow", sans-serif;
@@ -46,9 +46,20 @@
   background-color: white;
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1000px) {
   .Home {
     background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+  .space {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 6.625rem;
+  }
+  .space__two {
+    width: 242px;
+    height: 242px;
+    margin-top: 8rem;
   }
 }
 @media screen and (max-width: 500px) {

@@ -9,8 +9,7 @@
 }
 
 .destination_container {
-  padding: 4rem 10rem;
-  border: 1px solid white;
+  padding: 4rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,18 +25,16 @@
 }
 
 .destination__child {
-  width: 90%;
+  width: 95%;
   align-self: center;
-  padding: 0 1rem;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  border: 1px solid white;
   align-items: center;
 }
 
 .destination_image {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   display: block;
 }
 
@@ -68,7 +65,7 @@
 }
 
 .destination_divider {
-  border: 1px solid #383B4B;
+  border: 1px solid #383b4b;
   margin: 2rem 0 1rem 0;
 }
 
@@ -92,6 +89,32 @@
 @media screen and (max-width: 1000px) {
   .Destination {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+  .destination__child {
+    width: 80%;
+    padding-top: 2rem;
+    grid-template-columns: 100%;
+    text-align: center;
+    justify-items: center;
+  }
+  .destination_image {
+    width: 300px;
+    height: 300px;
+  }
+  .destination_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  .destination__navs {
+    line-height: 19.2px;
+  }
+  .destination__navs a {
+    padding: 0.45rem 0;
+  }
+  .destination__details_name {
+    font-size: 4rem;
   }
 }
 @media screen and (max-width: 500px) {

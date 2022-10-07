@@ -6,10 +6,9 @@
   display: flex;
   max-width: 100%;
   align-items: center;
-  padding-left: 3rem;
   width: 100vw;
   color: white;
-  padding-top: 2rem;
+  padding: 2rem 0 0 3rem;
   justify-content: space-between;
 
   .logo {
@@ -57,10 +56,14 @@
   }
   .nav_container {
     justify-content: space-between;
-    padding: 0rem;
+    padding: 0 0 0 1rem;
+
+    hr {
+      display: none;
+    }
   }
   .nav__children {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     font-size: 14px;
     // width: 450px;
   }
