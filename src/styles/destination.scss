@@ -1,0 +1,32 @@
+.Destination {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+.destination_container{
+    padding: 4rem 10rem;
+    border: 1px solid white;
+}
+.destination_heading{
+    font-size: 28px;
+    font-family: 'Barlow Condensed' , sans-serif;
+    b{
+        padding: 0.25rem;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .Destination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+}
+@media screen and (max-width: 500px) {
+  .Destination {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+}

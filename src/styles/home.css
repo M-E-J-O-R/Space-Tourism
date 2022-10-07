@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 .Home {
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   min-height: 100vh;
-  padding-left: 3.5rem;
   background-color: black;
 }
 
@@ -49,7 +46,7 @@
   background-color: white;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 100px) {
   .Home {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }

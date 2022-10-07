@@ -49,9 +49,9 @@ type NavChildrenType = {
 
 function NavChildren({ navs, num }: NavChildrenType): JSX.Element {
     return (
-        <Link to={'/'}>
-            <span className="nav__children-hidden">{num}
-            </span>
+        <Link to={navs=== 'Home'?'/':`/${navs.toLowerCase()}`}>
+            <b className="nav__children-hidden">{num}
+            </b>
             {navs}
         </Link>
     );

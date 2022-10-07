@@ -1,5 +1,5 @@
 import '../styles/home.css';
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 export default function Home(): JSX.Element {
     return (
@@ -20,18 +20,6 @@ export default function Home(): JSX.Element {
 
                 </div>
             </div>
-
-
-            {/* <div className="space__child">
-                    <div className="space__child__one">
-
-                    </div>
-                    <div className="space__child__two">
-                        Explore
-                    </div>
-
-                </div> */}
-
 
         </>
 
