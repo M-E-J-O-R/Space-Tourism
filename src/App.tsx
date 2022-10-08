@@ -9,6 +9,7 @@ import Crew from "./pages/Crew";
 import Destination from "./pages/Destination";
 
 import Technology from "./pages/Technology";
+import DestinationRoute from "./routes/DestinationRoute";
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/crew" element={<Crew />} />
-            <Route path="/destination" element={<Destination />} />
+            <Route path="/destination/*" element={<DestinationRoute/>} />
             <Route path="/technology" element={<Technology />} />
 
             <Route path="*" element={<ErrorPage />} />

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import '../styles/nav-bar.css';
 import logo from '../assets/shared/logo.svg';
 
@@ -38,6 +38,8 @@ function NavBar() {
 
 
             </div>
+
+            <Outlet/>
         </>
     );
 }

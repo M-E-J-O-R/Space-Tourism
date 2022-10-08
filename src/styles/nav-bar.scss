@@ -6,7 +6,8 @@
   display: flex;
   max-width: 100%;
   align-items: center;
-  width: 100vw;
+  //width: 100vw;
+ 
   color: white;
   padding: 2rem 0 0 3rem;
   justify-content: space-between;
@@ -50,10 +51,10 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .nav__children-hidden,
-  .nav__hr-hidden {
-    display: none;
-  }
+  // .nav__children-hidden,
+  // .nav__hr-hidden {
+  //   display: none;
+  // }
   .nav_container {
     justify-content: space-between;
     padding: 0 0 0 1rem;
@@ -64,7 +65,7 @@
   }
   .nav__children {
     padding: 1rem 2rem;
-    font-size: 14px;
+   font-size: 14px;
     // width: 450px;
   }
 }
