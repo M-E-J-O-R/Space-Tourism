@@ -63,14 +63,14 @@
   display: flex;
   justify-content: space-between;
 }
-.crew-nav a {
+.crew-nav div {
   display: block;
   width: 15px;
   background-color: white;
   height: 15px;
   border-radius: 100%;
 }
-.crew-nav a:active {
+.crew-nav div:active {
   background-color: #d0d6f9;
 }
 

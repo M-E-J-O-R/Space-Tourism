@@ -23,6 +23,7 @@
 .crew-details {
   display: flex;
   //gap: 8rem;
+  
   flex-direction: column;
   // align-self: center;
   article{
@@ -69,7 +70,7 @@
   display: flex;
   justify-content: space-between;
 
-  a {
+  div {
     display: block;
     width: 15px;
     background-color: white;
