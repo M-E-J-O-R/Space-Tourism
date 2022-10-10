@@ -18,12 +18,15 @@
 
 .crew-details {
   display: flex;
-  gap: 8rem;
   flex-direction: column;
+}
+.crew-details article {
+  padding: 8rem 0 4rem 0;
 }
 
 .crew-heading {
   font-size: 1.75rem;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .crew-heading b {
   color: #d0d6f9;
@@ -45,12 +48,14 @@
 .crew-member-info {
   font-size: 18px;
   width: 440px;
+  font-family: "Barlow", sans-serif;
   color: #d0d6f9;
+  line-height: 32px;
 }
 
 .crew-image {
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .crew-nav {

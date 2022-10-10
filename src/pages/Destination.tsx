@@ -16,6 +16,7 @@ const Destination = () => {
 
             <main className="destination_container">
                 <p className="destination_heading"> <b>01</b>  CHOOSE YOUR DESTINATION</p>
+                
                 <DestinationPlanet />
                
 
