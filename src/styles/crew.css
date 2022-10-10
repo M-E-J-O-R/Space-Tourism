@@ -10,7 +10,6 @@
 
 .crew-container {
   display: grid;
-  border: 1px solid red;
   width: 80%;
   padding-top: 4rem;
   margin: 0 auto;
@@ -19,7 +18,7 @@
 
 .crew-details {
   display: flex;
-  gap: 4rem;
+  gap: 8rem;
   flex-direction: column;
 }
 
@@ -40,18 +39,34 @@
 }
 .crew-name .name {
   font-size: 3.5rem;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .crew-member-info {
   font-size: 18px;
-  width: 444px;
+  width: 440px;
+  color: #d0d6f9;
 }
 
 .crew-image {
   width: 100%;
   padding: 2rem;
-  border: 1px solid white;
+}
+
+.crew-nav {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.crew-nav a {
+  display: block;
+  width: 15px;
+  background-color: white;
+  height: 15px;
+  border-radius: 100%;
+}
+.crew-nav a:active {
+  background-color: #d0d6f9;
 }
 
 @media screen and (max-width: 1000px) {

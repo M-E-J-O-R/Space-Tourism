@@ -10,31 +10,29 @@
 
 .crew-container {
   display: grid;
-  border: 1px solid red;
+
   width: 80%;
   padding-top: 4rem;
-   margin: 0 auto;
-   
+  margin: 0 auto;
+
   grid-template-columns: repeat(2, 50%);
   //justify-items: center;
   //justify-content: center;
 }
 
 .crew-details {
-  
   display: flex;
-  gap: 4rem;
+  gap: 8rem;
   flex-direction: column;
- // align-self: center;
-
+  // align-self: center;
 }
 .crew-heading {
-    font-size: 1.75rem;
-     //padding: 4rem 0; //8rem 0 8rem;
-    b {
-      color: #d0d6f9;
-    }
+  font-size: 1.75rem;
+  //padding: 4rem 0; //8rem 0 8rem;
+  b {
+    color: #d0d6f9;
   }
+}
 .crew-name {
   font-family: "Bellefair", sans-serif;
   text-transform: uppercase;
@@ -45,20 +43,36 @@
   }
   .name {
     font-size: 3.5rem;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
   }
 }
 .crew-member-info {
   font-size: 18px;
-  width: 444px;
-  
-
+  width: 440px;
+  color: #d0d6f9;
 }
 .crew-image {
   width: 100%;
-  padding:  2rem;
+  padding: 2rem;
   //height: 712px;
-  border: 1px solid white;
+ 
+}
+.crew-nav {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: block;
+    width: 15px;
+    background-color: white;
+    height: 15px;
+    border-radius: 100%;
+    &:active{
+        background-color: #d0d6f9 ;
+
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {

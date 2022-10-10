@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import '../styles/crew.css';
 import crew from '../assets/crew/image-douglas-hurley.webp';
+import { Link } from "react-router-dom";
 
 const Crew = () => {
     return (<>
@@ -25,12 +26,21 @@ const Crew = () => {
                             commander of Crew Dragon Demo-2.
                         </p>
                     </article>
+
+                    <nav className="crew-nav">
+                        <Link to={'/'}> </Link>
+                        <Link to={'/'}> </Link>
+                        <Link to={'/'}> </Link>
+                        <Link to={'/'}> </Link>
+                    </nav>
                 </section>
 
                 <section className="crew-image-container">
                     <img src={crew} alt="" className="crew-image" />
 
                 </section>
+
+
 
 
             </main>
