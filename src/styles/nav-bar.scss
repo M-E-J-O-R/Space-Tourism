@@ -37,7 +37,7 @@
   a {
     text-decoration: none;
     color: white;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     transition: all 0.2s linear;
 
     &:hover {
@@ -58,14 +58,20 @@
   .nav_container {
     justify-content: space-between;
     padding: 0 0 0 1rem;
-
+    
     hr {
       display: none;
     }
   }
   .nav__children {
-    padding: 1rem 2rem;
-   font-size: 14px;
-    // width: 450px;
+    //border: 1px solid red;
+    padding: 0 1.25rem;
+    width: fit-content;
+    font-size: 14px;
+    a{
+      padding:2.5rem 0.25rem;
+     // border: 1px solid red;
+    }
+     
   }
 }
