@@ -106,8 +106,15 @@
   .crew-details {
     align-items: center;
     text-align: center;
+    .role {
+      font-size: 1.5rem;
+    }
+    .name {
+      font-size: 2.5rem;
+    }
     .crew-member-info {
       width: 100%;
+      font-size: 1rem;
     }
   }
 }
