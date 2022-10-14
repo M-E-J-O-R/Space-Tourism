@@ -5,6 +5,35 @@
   width: 100vw;
   min-height: 100vh;
   background-color: black;
+  color: white;
+}
+
+.technology-container {
+  border: 1px solid red;
+  width: 100%;
+  margin-left: 8.8rem;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.technology-heading {
+  font-size: 1.75rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.technology-heading b {
+  padding-right: 0.5rem;
+  color: #D0D6F9;
+}
+
+.technology-nav div {
+  text-align: center;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #D0D6F9;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1000px) {
