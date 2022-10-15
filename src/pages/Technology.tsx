@@ -11,17 +11,17 @@ const Technology = () => {
                     <p> <b>03</b>  SPACE LAUNCH 101</p>
                 </header>
 
-                <section className="technology-details">
+                <section className="technology-details-wrapper">
                     <nav className="technology-nav">
                         <div>1</div>
                         <div>2</div>
                         <div>3</div>
                     </nav>
 
-                    <section>
+                    <section className="technology-details" >
 
 
-                        <p className="technology-feature">  The terminology...</p>
+                        <p className="technology-terminology">  THE TERMINOLOGY...</p>
                         <p className="technology-title">Launch vehicle</p>
 
                         <article className="technology-info">
@@ -32,7 +32,7 @@ const Technology = () => {
                 </section>
 
 
-                <img src={technologyLogo} alt="" />
+                < img className="technology-image" src={technologyLogo} alt="" />
             </main>
         </div>
     </>);

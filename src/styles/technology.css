@@ -9,21 +9,36 @@
 }
 
 .technology-container {
-  border: 1px solid red;
   width: 100%;
-  margin-left: 8.8rem;
+  margin-top: 76px;
+  display: grid;
+  padding-left: 8.8rem;
+  padding-bottom: 6.3rem;
+  row-gap: 1.5rem;
   grid-template-columns: repeat(2, 50%);
 }
 
 .technology-heading {
   font-size: 1.75rem;
   font-family: "Barlow Condensed", sans-serif;
+  grid-column: 1/span 2;
 }
 .technology-heading b {
   padding-right: 0.5rem;
-  color: #D0D6F9;
+  color: #d0d6f9;
 }
 
+.technology-details-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.technology-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .technology-nav div {
   text-align: center;
   border: 1px solid;
@@ -32,8 +47,36 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  border: 1px solid #D0D6F9;
+  border: 1px solid #d0d6f9;
   border-radius: 50%;
+}
+.technology-nav div:hover {
+  order: 1px solid white;
+}
+
+.technology-terminology {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.technology-title {
+  font-size: 3rem;
+  margin: 0.65rem 0 1.05rem 0;
+  text-transform: uppercase;
+  font-family: "Bellefair", sans-serif;
+}
+
+.technology-info {
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  line-height: 32px;
+}
+
+.technology-image {
+  display: block;
+  justify-self: flex-end;
+  width: 515px;
+  height: 527px;
 }
 
 @media screen and (max-width: 1000px) {
