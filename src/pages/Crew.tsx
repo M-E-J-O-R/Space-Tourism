@@ -6,6 +6,7 @@ import { useState } from "react";
 
 
 
+
 const Crew = () => {
     let crewData = data.crew;
 
@@ -21,14 +22,22 @@ const Crew = () => {
 
     const [role, setRole] = useState('Commander');
 
-    const handleRole = (el: crewDataType) => {
-        if (el.role === role) {
-            return el;
+    
+
+    const handleRole = (element: crewDataType) => {
+        if (element.role === role) {
+
+            return element;
         }
     };
     let sortedData = crewData.filter(handleRole);
 
     let crew = sortedData[0];
+
+    let style = {
+        opacity: crew.role === role ? 1 :0.17
+    };
+
 
 
 
@@ -47,13 +56,12 @@ const Crew = () => {
                         </div>
 
                         <p className="crew-member-info">  {crew.bio}
-                            and former NASA astsronaut. He launched into space for the third time as
-                            commander of Crew Dragon Demo-2.
+
                         </p>
                     </article>
 
                     <nav className="crew-nav">
-                        <div onClick={() => setRole('Commander')} > </div>
+                        <div style={style} onClick={() => setRole('Commander')} > </div>
                         <div onClick={() => setRole('Mission Specialist')} > </div>
                         <div onClick={() => setRole('Pilot')} > </div>
                         <div onClick={() => setRole('Flight Engineer')} > </div>

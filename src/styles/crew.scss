@@ -17,6 +17,7 @@
 
   b {
     color: #d0d6f9;
+    margin-right: 0.5rem;
   }
 }
 
@@ -80,14 +81,13 @@
     display: block;
     width: 15px;
     background-color: white;
+    opacity: 0.17;
     height: 15px;
     border-radius: 100%;
     &:hover {
       background-color: #d0d6f9;
     }
-    &:active {
-      background-color: #d0d6f9;
-    }
+   
   }
 }
 
