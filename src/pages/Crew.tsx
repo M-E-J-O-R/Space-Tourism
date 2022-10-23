@@ -22,7 +22,7 @@ const Crew = () => {
 
     const [role, setRole] = useState('Commander');
 
-    
+
 
     const handleRole = (element: crewDataType) => {
         if (element.role === role) {
@@ -34,12 +34,13 @@ const Crew = () => {
 
     let crew = sortedData[0];
 
-    let style = {
-        opacity: crew.role === role ? 1 :0.17
-    };
-
-
-
+    function styleFunction(element: string) {
+        if (role === element) {
+            return {
+                opacity: 1
+            };
+        }
+    }
 
     return (<>
         <div className="Crew">
@@ -61,10 +62,16 @@ const Crew = () => {
                     </article>
 
                     <nav className="crew-nav">
-                        <div style={style} onClick={() => setRole('Commander')} > </div>
-                        <div onClick={() => setRole('Mission Specialist')} > </div>
-                        <div onClick={() => setRole('Pilot')} > </div>
-                        <div onClick={() => setRole('Flight Engineer')} > </div>
+                        <div
+                            style={styleFunction('Commander')}
+                            onClick={() => setRole('Commander')} > </div>
+                        <div
+                            style={styleFunction('Mission Specialist')}
+                            onClick={() => setRole('Mission Specialist')} > </div>
+                        <div
+                            style={styleFunction('Pilot')} onClick={() => setRole('Pilot')} > </div>
+                        <div
+                            style={styleFunction('Flight Engineer')} onClick={() => setRole('Flight Engineer')} > </div>
 
                     </nav>
                 </section>

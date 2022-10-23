@@ -1,20 +1,21 @@
 import { Link, useParams } from "react-router-dom";
 import data from '../data/data.json';
 
-console.log(document.location)
-
 
 const DestinationPlanet = () => {
 
     const { id } = useParams();
+
     let numId: number = Number(id);
+
     let destination = data.destinations[numId];
+
     isNaN(numId) ? (destination = data.destinations[0]) : (destination = data.destinations[numId]);
-  
+
 
     return (<>
         <section className="destination__child">
-            
+
             {/* <img src={require(destination.images.webp)} alt="" className="destination_image" /> */}
 
 

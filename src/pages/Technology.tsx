@@ -1,7 +1,40 @@
+import { useState,useEffect } from 'react';
 import NavBar from "../components/NavBar";
 import '../styles/technology.css';
-import technologyLogo from '../assets/technology/image-launch-vehicle-portrait.jpg';
+import data from '../data/data.json';
+
+
+
 const Technology = () => {
+    const [techName, setTechName] = useState('Launch vehicle');
+
+    const [media, setMedia] = useState(window.matchMedia('max-width:1000px').matches);
+    
+
+    let technologyData = data.technology;
+
+    const filteredTech = technologyData.filter((element) => element.name === techName && element);
+
+    let tech = filteredTech[0];
+
+    function styleFunction(element: string) {
+        if (techName === element) {
+            return {
+                color: 'black',
+                backgroundColor: 'white'
+            };
+        }
+    }
+   
+    useEffect(() => {
+        window
+            .matchMedia('max-width:1000px')
+            .addEventListener('change',e=>setMedia(e.matches))
+      
+    }, [])
+    
+
+
     return (<>
 
         <div className="Technology">
@@ -13,26 +46,37 @@ const Technology = () => {
 
                 <section className="technology-details-wrapper">
                     <nav className="technology-nav">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
+                        <div
+                            style={styleFunction('Launch vehicle')}
+                            onClick={() => setTechName('Launch vehicle')}>1</div>
+                        <div
+                            style={styleFunction('Spaceport')} onClick={() => setTechName('Spaceport')}>2</div>
+                        <div
+                            style={styleFunction('Space capsule')}
+                            onClick={() => setTechName('Space capsule')}>3</div>
                     </nav>
 
                     <section className="technology-details" >
 
 
                         <p className="technology-terminology">  THE TERMINOLOGY...</p>
-                        <p className="technology-title">Launch vehicle</p>
+                        <p className="technology-title">{tech.name}</p>
 
                         <article className="technology-info">
-                            <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,it's quite an awe-inspiring sight on the launch pad!</p>
+                            <p>{tech.description}</p>
                         </article>
                     </section>
 
                 </section>
 
+                <div className="technology-image"
+                    style={{
+                        backgroundImage: `url(${require(`../assets/technology/${media?tech.images.landscape:tech.images.portrait}`)})`
+                    }}
+                >
 
-                < img className="technology-image" src={technologyLogo} alt="" />
+                </div>
+
             </main>
         </div>
     </>);
