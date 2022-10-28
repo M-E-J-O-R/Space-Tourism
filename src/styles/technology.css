@@ -122,4 +122,17 @@
   .Technology {
     background-image: url("../assets/technology/background-technology-mobile.jpg");
   }
+  .technology-heading {
+    justify-self: center;
+  }
+  .technology-nav div {
+    width: 40px;
+    height: 40px;
+  }
+  .technology-details {
+    letter-spacing: 2.4px;
+  }
+  .technology-details .technology-title {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=technology.css.map */
