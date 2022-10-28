@@ -98,19 +98,45 @@
     align-items: center;
     text-align: center;
   }
-  .crew-details .role {
-    font-size: 1.5rem;
-  }
-  .crew-details .name {
-    font-size: 2.5rem;
-  }
   .crew-details .crew-member-info {
     width: 100%;
     font-size: 1rem;
+  }
+  .crew-name .role {
+    font-size: 1.5rem;
+  }
+  .crew-name .name {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 500px) {
   .Crew {
     background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+  .crew-heading {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .crew-image-container {
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    border-bottom: 1px solid gray;
+  }
+  .crew-details {
+    display: grid;
+    gap: 0;
+    grid-column: auto;
+  }
+  .crew-details .crew-name .role {
+    font-size: 1rem;
+  }
+  .crew-details .crew-name .name {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .crew-details .crew-nav {
+    grid-row: 1;
+    justify-self: center;
   }
 }/*# sourceMappingURL=crew.css.map */

@@ -16,9 +16,6 @@ const DestinationPlanet = () => {
     return (<>
         <section className="destination__child">
 
-            {/* <img src={require(destination.images.webp)} alt="" className="destination_image" /> */}
-
-
             <img src={require(`../assets/destination/${destination.images.webp}`)} alt="" className="destination_image" />
 
             <section className="destination_details">
@@ -40,6 +37,7 @@ const DestinationPlanet = () => {
                         <p className="sub-details-child-head">AVG. DISTANCE</p>
                         <p className="sub-details-child-body" > {destination.distance}</p>
                     </div>
+                   
                     <div className="sub-details-child">
                         <p className="sub-details-child-head" >EST. TRAVEL TIME</p>
                         <p className="sub-details-child-body" >{destination.travel}</p>

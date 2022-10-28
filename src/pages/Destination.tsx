@@ -15,7 +15,7 @@ const Destination = () => {
             <NavBar />
 
             <main className="destination_container">
-                <p className="destination_heading"> <b>01</b>  CHOOSE YOUR DESTINATION</p>
+                <p className="destination_heading"> <b>01 </b>PICK YOUR DESTINATION</p>
                 
                 <DestinationPlanet />
                

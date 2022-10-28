@@ -1,8 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .Home {
-  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-image: url("../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  background-position: center;
+  max-width: 100vw;
   min-height: 100vh;
   background-color: black;
 }
@@ -21,7 +28,7 @@
   width: 450px;
 }
 .space__one .space__one_ques {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 .space__one .space__one_head {
@@ -31,7 +38,8 @@
 }
 .space__one .space__one_talks {
   font-family: "Barlow", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 25px;
 }
 
 .space__two {
@@ -65,5 +73,24 @@
 @media screen and (max-width: 500px) {
   .Home {
     background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+  .space {
+    width: 90vw;
+  }
+  .space__one {
+    width: 100%;
+  }
+  .space__one .space__one_ques {
+    margin-bottom: 2rem;
+  }
+  .space__one .space__one_head {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  .space__one .space__one_talks {
+    font-size: 0.9375rem;
+  }
+  .space__two {
+    margin-top: 5rem;
   }
 }/*# sourceMappingURL=home.css.map */

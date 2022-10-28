@@ -10,14 +10,15 @@
 
 .destination_container {
   width: 80%;
-  margin: 4rem auto;
+  padding: 4rem 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .destination_heading {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 .destination_heading b {
@@ -69,7 +70,7 @@
 }
 
 .destination_divider {
-  border: 1px solid #383b4b;
+  border: 0.1px solid #383b4b;
   margin: 2rem 0 1rem 0;
 }
 
@@ -94,6 +95,12 @@
 @media screen and (max-width: 1000px) {
   .Destination {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+  .destination_heading {
+    margin: 0 auto;
+    font-size: 18px;
+    letter-spacing: 2.4px;
+    line-height: 19.2px;
   }
   .destination__child {
     width: 80%;
@@ -125,5 +132,22 @@
 @media screen and (max-width: 500px) {
   .Destination {
     background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+  .destination_container {
+    width: 90%;
+    padding: 1.75rem 0 4rem 0;
+  }
+  .destination__child {
+    width: 100%;
+  }
+  .destination_image {
+    width: 170px;
+    height: 170px;
+  }
+  .destination_divider {
+    width: 100%;
+  }
+  .destination_sub_details {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=destination.css.map */

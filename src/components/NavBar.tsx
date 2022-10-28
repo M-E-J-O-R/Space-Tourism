@@ -1,45 +1,49 @@
 import { Link, Outlet } from "react-router-dom";
 import '../styles/nav-bar.css';
 import logo from '../assets/shared/logo.svg';
+import open from '../assets/shared/icon-hamburger.svg';
+import close from '../assets/shared/icon-close.svg';
+import { useRef, useState } from "react";
 
 
 function NavBar() {
+    const [navState, setNavState] = useState(false);
+
+    const handleNavState = () => setNavState(prev => !prev);
+
+    const handleDisplay = () => {
+        return { right: navState ?  '0px':'-100vw' };
+    };
+
+
+
     return (
-        <>
+        <
+
+            >
             <div className="nav_container">
                 <img src={logo} className='logo' alt="star" />
                 <hr className="nav__hr-hidden" />
 
-                <div className="nav__children">
+                <img className="mobile" onClick={handleNavState} src={open} alt='/' />
+
+                <nav className="nav__children" style={handleDisplay()}
+                >
+                    <img className="mobile close" src={close} alt="" onClick={handleNavState} />
+
 
                     <NavChildren navs='Home' num='00' />
                     <NavChildren navs='Destination' num='01' />
                     <NavChildren navs='Crew' num='02' />
                     <NavChildren navs='Technology' num='03' />
 
-                    {/* <Link to={'/'}>
-                        <span className="nav__children-hidden">00</span>  Home
-                    </Link>
-                    <Link to={'/'}>
-                        <span className="nav__children-hidden">01</span>
-                        Destination
-                    </Link>
-                    <Link to={'/'}>
-                        <span className="nav__children-hidden">02</span>
-                        Crew
-                    </Link> */}
-                    {/* <Link to={'/'}>
-                        <span className="nav__children-hidden">03</span>
-                        Technology
-                    </Link> */}
-
-                </div>
+                 </nav>
 
 
 
             </div>
 
-            <Outlet/>
+            <Outlet />
         </>
     );
 }
@@ -51,10 +55,10 @@ type NavChildrenType = {
 
 function NavChildren({ navs, num }: NavChildrenType): JSX.Element {
     return (
-        <Link to={navs=== 'Home'?'/':`/${navs.toLowerCase()}`}>
+        <Link to={navs === 'Home' ? '/' : `/${navs.toLowerCase()}`}>
             <b className="nav__children-hidden">{num}
             </b>
-            {navs}
+            {navs.toUpperCase()}
         </Link>
     );
 }
